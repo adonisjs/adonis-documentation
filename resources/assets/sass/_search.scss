@@ -1,0 +1,23 @@
+.search-container {
+  width: grid-column-width(9.5);
+  border-left: 1px solid $border-color;
+  padding-left: 80px;
+
+  span.algolia-autocomplete {
+    width: 100%;
+  }
+
+  .search {
+    width: 100%;
+    display: block;
+    border: none;
+    background: url('./images/search.svg') center right no-repeat #fff;
+    padding: 25px 0px;
+    width: 100%;
+    @include base-font-size();
+    margin: 0;
+    &:focus {
+      border: none;
+    }
+  }
+}

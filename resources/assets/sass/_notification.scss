@@ -1,0 +1,61 @@
+.admonitionblock {
+  padding: 12px 18px;
+  line-height: 1.5rem;
+  margin: 18px 0 18px 0;
+  border: 1px solid;
+  border-radius: 6px;
+
+  .content {
+    line-height: 1.6;
+  }
+
+  &.note {
+    border-color: $note-border-color;
+    background-color: $note-color;
+  }
+
+  &.tip {
+    border-color: $tip-border-color;
+    background-color: $tip-color;
+  }
+
+  table {
+    margin-bottom: 0;
+  }
+
+  .fa {
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    display: inline-block;
+    &.icon-note {
+      background-image: url("./images/icon-note.svg");
+    }
+    &.icon-tip {
+      background-image: url("./images/icon-tip.svg");
+    }
+  }
+}
+
+
+.notificiation {
+  background: $link-color;
+  padding: 12px 18px;
+  line-height: 1.5rem;
+  margin: 18px 0 18px 0;
+  margin-bottom: 60px;
+  border-radius: 6px;
+  color: #fff;
+
+  p {
+    margin: 0;
+  }
+
+  .button {
+    background-color: lighten($link-color, 60%);
+    padding: 0;
+    width: 100%;
+    margin-top: 7px;
+    border: none;
+  }
+}

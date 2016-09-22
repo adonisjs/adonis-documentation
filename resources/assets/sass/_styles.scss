@@ -1,0 +1,178 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700';
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
+
+///////////////////
+// GLOBAL STYLES //
+///////////////////
+body {
+  -webkit-font-smoothing: antialiased;
+  &.active-sidebar {
+    overflow: hidden;
+    .overlay {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+
+iframe {
+  max-width: 100%;
+}
+
+table {
+  max-width: 100%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: opacity 200ms linear;
+}
+
+dl dt {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+blockquote, dl, figure, form, ol, p, pre, table, ul {
+  @include base-font-size();
+}
+
+dl dd {
+  margin: 0;
+}
+
+/////////////////////////////
+// CODE BLOCK WITH A TITLE //
+/////////////////////////////
+.listingblock, .ulist .listingblock {
+  .title {
+    color: $light-grey;
+    background: #212121;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-family: $code-family;
+    border-left: 3px solid $link-color;
+    margin: 0 .2rem;
+    font-size: 1.2rem;
+  }
+  .title + .content > pre {
+    margin-top: 0px;
+  }
+}
+
+///////////////////////////////////////
+// OVERRIDING STYLES OF HIGHLIGHT.JS //
+///////////////////////////////////////
+.hljs, pre:not(.highlight) {
+  font-family: $code-family;
+  border-radius: 0;
+  font-weight: 400;
+  font-size: 1.3rem;
+  border: none;
+  padding: 12px 20px;
+  border-left: 3px solid $link-color;
+}
+
+pre:not(.highlight) {
+  padding: 20px;
+}
+
+code {
+  background: $pre-color;
+  border-color: $border-color;
+}
+
+/////////////////////////////////////
+// REMOVING BORDER FROM LAST TR TD //
+/////////////////////////////////////
+tr:last-child td {
+  border-bottom: none;
+}
+
+////////////////////////////////////////
+// CONUMS TO HIGHLIGHT PIECES OF CODE //
+////////////////////////////////////////
+.conum[data-value] {
+  color: $white-color;
+  background-color: rgba(0,0,0,.8);
+  @include centric-circle(1.67em);
+  font-style: normal;
+  font-family: $font-family;
+
+  &:after {
+    content: attr(data-value);
+  }
+
+  +b {
+    display: none;
+  }
+}
+
+//////////////////////////////////////
+// KEEPING CUSTOM LIST ITEMS SIMPLE //
+//////////////////////////////////////
+div.pretty-list, div.support-list {
+  ol, ul {
+    @include bare-list(null, null, null, null)
+  }
+
+  li p {
+    @include base-font-size();
+    margin-bottom: 1.2rem;
+  }
+}
+
+//////////////////////////////////////
+// ADDING CHECKMAKRS ON PRETTY LIST //
+//////////////////////////////////////
+div.pretty-list {
+  li {
+    position: relative;
+    padding-left: 30px;
+    &:before {
+      content: "";
+      position: absolute;
+      background-image: url("./images/icon-success.svg");
+      height: 20px;
+      width: 20px;
+      left: 0;
+      top: 4px;
+      background-size: 100%;
+    }
+  }
+}
+
+///////////////////
+// TITLE STYLING //
+///////////////////
+.admonitionblock td.content, .audioblock, .exampleblock, .imageblock, .literalblock, .stemblock, .openblock, .paragraph, .quoteblock, table.tableblock, .verseblock, .videoblock, .dlist, .olist, .ulist, .qlist, .hdlist {
+  .title {
+    color: $link-color;
+    text-align: left;
+    @include base-font-size();
+    margin-bottom: .25rem;
+  }
+}
+
+/////////////////////////////////
+// SEARCH AND VERSION SWITCHER //
+/////////////////////////////////
+.switcher {
+  border-bottom: 1px solid $border-color;
+}
+
+/////////////////////////////////////////////
+// NARROW THE CONTAINER WITH EXTRA PADDING //
+/////////////////////////////////////////////
+.container.narrow {
+  padding: 0 50px;
+}

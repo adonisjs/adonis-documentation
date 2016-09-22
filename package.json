@@ -1,0 +1,54 @@
+{
+  "name": "adonis-app",
+  "version": "3.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch app --watch bootstrap --watch config --watch .env -x \"node --harmony_proxies\" server.js",
+    "start": "node --harmony_proxies server.js",
+    "build:sass": "node-sass ./resources/assets/sass/app.scss ./resources/assets/css/adonis.css --include-path=bower_components",
+    "concat:styles": "cat ./resources/assets/css/github.css ./resources/assets/css/algolia.css ./resources/assets/css/adonis.css | cleancss -o public/adonis.css",
+    "build:styles": "npm run build:sass && npm run concat:styles",
+    "build:scripts": "uglifyjs resources/assets/js/highlight.pack.js resources/assets/js/zepto.js -o public/adonis.js",
+    "build": "build:styles && npm run build:scripts",
+    "watch:styles": "chokidar 'resources/assets/sass/*.scss' -c 'npm run build:styles'",
+    "watch:scripts": "chokidar 'resources/assets/js/*.js' -c 'npm run build:scripts'",
+    "watch": "concurrently 'npm run watch:styles' 'npm run watch:scripts'",
+    "lint": "standard",
+    "setup:3.0": "./ace build:docs adonisjs/docs --docVersion=3.0 --branch=develop --parser=markdown",
+    "setup:3.1": "./ace build:docs adonisjs/docs --docVersion=3.1 --branch=3.1 --parser=adoc",
+    "setup": "npm install && npm run setup:3.0 && npm run setup:3.1"
+  },
+  "standard": {
+    "global": [
+      "use",
+      "make"
+    ]
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "adonis-ace": "^3.0.1",
+    "adonis-commands": "^2.1.0",
+    "adonis-fold": "^3.0.2",
+    "adonis-framework": "^3.0.1",
+    "adonis-middleware": "^1.0.7",
+    "docketjs": "^1.0.6",
+    "lodash": "^4.15.0",
+    "pify": "^2.3.0",
+    "youch": "^1.0.1"
+  },
+  "autoload": {
+    "App": "./app"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "clean-css": "^3.4.19",
+    "node-sass": "^3.9.3",
+    "nodemon": "^1.9.1",
+    "standard": "^8.1.0",
+    "uglify-js": "^2.7.3",
+    "watch": "^0.19.2"
+  }
+}

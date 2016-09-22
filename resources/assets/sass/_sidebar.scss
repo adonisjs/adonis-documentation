@@ -1,0 +1,42 @@
+.sidebar {
+  padding-top: 50px;
+  width: grid-column-width(2.5);
+
+  .nav {
+    @include bare-list(null, null, 40px, null);
+  }
+
+  .nav-item {
+    margin-bottom: 2px;
+
+    &.head {
+      @extend .subtitle;
+    }
+
+    a {
+      color: $secondary-color;
+      @include base-font-size();
+      text-decoration: none;
+    }
+
+    &.active a {
+      color: $link-color;
+    }
+  }
+
+  &.active {
+    .nav-item {
+      &.head {
+        color: lighten($primary-color, 40%);
+      }
+
+      a {
+        color: #fff;
+      }
+
+      &.active a {
+        border-bottom: 1px dotted;
+      }
+    }
+  }
+}

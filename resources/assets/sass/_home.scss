@@ -1,0 +1,148 @@
+/////////////////////////////////////////
+// THE SPLASH CONTAINER WITH PURPLE BG //
+/////////////////////////////////////////
+.splash {
+  background: $primary-color;
+  background: -moz-radial-gradient(top,ellipse cover,$primary-color 11%,darken($primary-color, 7%) 99%,darken($primary-color, 7%) 100%);
+  background: -webkit-gradient(radial,top center,0,center center,100%,color-stop(11%,$primary-color),color-stop(99%,darken($primary-color, 7%)),color-stop(100%,darken($primary-color, 7%)));
+  background: -webkit-radial-gradient(top,ellipse cover,$primary-color 11%,darken($primary-color, 7%) 99%,darken($primary-color, 7%) 100%);
+  background: -o-radial-gradient(top,ellipse cover,$primary-color 11%,darken($primary-color, 7%) 99%,darken($primary-color, 7%) 100%);
+  background: -ms-radial-gradient(top,ellipse cover,$primary-color 11%,darken($primary-color, 7%) 99%,darken($primary-color, 7%) 100%);
+  background: radial-gradient(ellipse at top,$primary-color 40%,#503d67 99%,#503d67 100%);
+
+  .header {
+    border-bottom: none;
+
+    .logo a {
+      color: #fff;
+    }
+
+    .menu ul li a {
+      color: rgba(255, 255, 255, 0.5);
+      transition: color 200ms ease;
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    .hamburger div {
+      background: #fff;
+    }
+  }
+}
+
+////////////////////////
+// HOME PAGE SECTIONS //
+////////////////////////
+.section {
+  padding: 120px 0;
+  border-bottom: 1px solid $border-color;
+
+  p {
+    font-weight: 300;
+    font-size: 1.8rem;
+  }
+
+  &:last-child {
+    border: none;
+  }
+}
+
+/////////////////////////////////
+// FANCY TITLE WITH RED BORDER //
+/////////////////////////////////
+.decorated-title {
+  @extend .subtitle;
+  margin: 60px 0 30px 0;
+  color: $font-color;
+  display: inline-block;
+  font-size: 2rem;
+
+  &:before {
+    background: $link-color;
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 65%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.about-section .decorated-title {
+  margin-top: 30px;
+}
+
+//////////////////////
+// HOME PAGE BANNER //
+//////////////////////
+.banner {
+  padding: 150px 0 220px;
+  text-align: center;
+
+  .title {
+    color: #fff;
+    letter-spacing: 1.2px;
+    margin: 0;
+    font-size: 4rem;
+  }
+
+  .sub-title {
+    color: #fff;
+    margin: 2.2rem auto 0;
+    line-height: 2.4rem;
+    font-size: 2rem;
+    max-width: 400px;
+    letter-spacing: 1.2px;
+  }
+}
+
+////////////////////////
+// HOME PAGE FEATURES //
+////////////////////////
+.features {
+  background: $pre-color;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  padding: 30px 34px;
+  h5 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 5px 0;
+  }
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+  }
+  .feature {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+///////////////////
+// HOME PAGE CTA //
+///////////////////
+.cta {
+  margin-top: 20px;
+  .button {
+    border-radius: 50px;
+    height: auto;
+    padding: 4px 25px;
+    font-size: 1.4rem;
+    background: transparent;
+    color: $primary-color;
+    transition: background 200ms ease;
+    border-color: $primary-color;
+
+    &:hover {
+      background: $primary-color;
+      color: #fff;
+    }
+  }
+}

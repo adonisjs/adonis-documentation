@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title> </title>
+  <link rel="stylesheet" href="/adonis.css">
+</head>
+<body>
+  <section>
+    {% block header %} {% include 'partials.header' %} {% endblock %}
+    <section class="body">
+      {% block content %}
+      {% endblock %}
+    </section>
+    <footer class="footer">
+      <div class="container narrow">
+        <div class="row">
+          <div class="columns six menu">
+            {% include 'partials.menu' %}
+          </div>
+          <div class="columns six">
+            <div class="tagline"><p>Created By <a href="https://github.com/thetutlage" target="_blank">Harminder Virk</a> .  Co - Designed By  <a href="http://nikkk.me/" target="_blank">Nikkk.me</a></p></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  {% block scripts %}
+    <script src="/adonis.js"></script>
+    <script nonce="{{ cspNonce }}">hljs.initHighlightingOnLoad();</script>
+  {% endblock %}
+</body>
+</html>

@@ -1,0 +1,35 @@
+.subtitle {
+  text-transform: uppercase;
+  position: relative;
+  color: $light-grey;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  font-size: 1.3rem;
+}
+
+@mixin bare-list($marginTop, $marginRight, $marginBottom, $marginLeft) {
+  list-style: none;
+  margin-top: $marginTop;
+  margin-right: $marginRight;
+  margin-bottom: $marginBottom;
+  margin-left: $marginLeft;
+}
+
+@mixin centric-circle($size) {
+  text-align: center;
+  display: inline-block;
+  border-radius: 100%;
+  width: $size;
+  height: $size;
+  line-height: $size;
+}
+
+.block-anchor {
+  display: block;
+  text-decoration: none;
+}
+
+@mixin base-font-size() {
+  font-size: 1.6rem;
+}

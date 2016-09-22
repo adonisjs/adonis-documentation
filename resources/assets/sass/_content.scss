@@ -1,0 +1,58 @@
+.docs {
+  padding: 50px 0;
+  border-left: 1px solid $border-color;
+  padding-left: 80px;
+  width: grid-column-width(9.5);
+
+  p {
+    @include base-font-size();
+    line-height: 1.8;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1, h2, h3, h4 {
+    color: $dark-grey;
+  }
+
+  h2 {
+    padding-top: 70px;
+    margin-top: 70px;
+    border-top: 1px solid $border-color;
+  }
+
+  h3 {
+    font-size: 3rem;
+    margin-top: 30px;
+  }
+
+  h4 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    position: relative;
+    >.anchor {
+      position: relative;
+      &:before {
+        content: "#";
+        position: absolute;
+        transition: opacity 300ms ease;
+        font-size: 2.5rem;
+        font-weight: 600;
+        left: -28px;
+        top: 3px;
+        color: $link-color;
+        opacity: .3;
+      }
+      &:hover:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  table p {
+    margin-bottom: 0;
+  }
+}

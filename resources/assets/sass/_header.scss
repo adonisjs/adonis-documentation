@@ -1,0 +1,56 @@
+.header {
+  padding: 15px 0;
+  border-bottom: 1px solid $border-color;
+}
+
+.logo-container {
+  width: grid-column-width(3);
+}
+
+.menu-container {
+  width: grid-column-width(9);
+}
+
+.logo a {
+  @extend .block-anchor;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  color: $dark-grey;
+  font-family: $logo-font-family;
+  font-weight: 300;
+}
+
+.hamburger {
+  cursor: pointer;
+  padding: 10px;
+  width: 37px;
+  margin: 18px 0 20px 0;
+  box-sizing: border-box;
+  div {
+    background: $font-color;
+    margin-top: 4px;
+    height: 2px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.menu {
+  width: 100%;
+  ul {
+    @include bare-list(null, null, 0, null);
+    li {
+      float: left;
+      margin: 18px 20px 0 0;
+      a {
+        @extend .subtitle;
+        @extend .block-anchor;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 10px 0;
+        color: $secondary-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1000px" !default;
+$bp-larger-than-desktophd : "min-width: 1200px" !default;
+
+// Colors
+$light-grey: #9aabb1 !default;
+$dark-grey: #2e2f30 !default;
+$primary-color: #744d82 !default;
+$secondary-color: lighten($dark-grey, 13.5%) !default;
+$border-color: #dbdfe1 !default;
+$link-color: #db5461 !default;
+$font-color: #424950 !default;
+$tip-color: #fffcf5 !default;
+$tip-border-color: #F8B82C !default;
+$note-color: #F0F7FB !default;
+$note-border-color: #3aa3e3 !default;
+$pre-color: #f3f4f5;
+$white-color: #ffffff;
+
+
+// Typography
+$font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$logo-font-family: "Source Sans Pro", sans-serif;
+$code-family: "Droid Sans Mono","DejaVu Sans Mono",monospace;
+
+//Grid Variables
+$container-width: 1080px !default;
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+$column-margin: 4% !default; // space between columns
+
+// Misc
+$global-radius: 4px !default;

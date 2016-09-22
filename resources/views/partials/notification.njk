@@ -1,0 +1,12 @@
+{% if (version | float) < (latestVersion | float) %}
+<div class="notificiation">
+  <div class="row">
+    <div class="columns nine">
+      <p><strong>Note:</strong> You are the viewing the documentation for older version of the framework.</p>
+    </div>
+    <div class="columns three">
+      <a href="/docs/{{latestVersion}}/{{meta.permalink}}" class="button">View latest docs</a>
+    </div>
+  </div>
+</div>
+{% endif %}
