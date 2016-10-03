@@ -868,6 +868,14 @@ form {
         color: #fff; }
     .splash .header .hamburger div {
       background: #fff; }
+  .splash .cta {
+    margin-top: 60px; }
+    .splash .cta .button {
+      border-color: #fff;
+      color: #fff; }
+      .splash .cta .button:hover {
+        background: #fff;
+        color: #744d82; }
 
 .section {
   padding: 120px 0;

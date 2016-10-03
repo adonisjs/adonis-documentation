@@ -29,6 +29,18 @@
       background: #fff;
     }
   }
+
+  .cta {
+    margin-top: 60px;
+    .button {
+      border-color: #fff;
+      color: #fff;
+      &:hover {
+        background: #fff;
+        color: $primary-color;
+      }
+    }
+  }
 }
 
 ////////////////////////

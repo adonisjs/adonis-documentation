@@ -15,9 +15,7 @@ module.exports = {
   | }
   */
   csp: {
-    directives: {
-      defaultSrc: ['self', 'www.youtube.com', 'fonts.gstatic.com', 'cdn.jsdelivr.net', '@nonce', 'unsafe-eval']
-    },
+    directives: {},
     reportOnly: false,
     setAllHeaders: false,
     disableAndroid: true
