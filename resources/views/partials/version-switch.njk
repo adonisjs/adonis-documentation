@@ -1,8 +1,8 @@
 <div class="version-switch columns">
   <span class="select-wrapper">
     <select name="version" id="version">
-      <option value="3.0">Version 3.0</option>
-      <option value="3.1" selected>Version 3.1</option>
+      <option value="3.0" {% if version == '3.0' %} selected {% endif %}>Version 3.0</option>
+      <option value="3.1" {% if version == '3.1' %} selected {% endif %}>Version 3.1</option>
     </select>
   </span>
 </div>
