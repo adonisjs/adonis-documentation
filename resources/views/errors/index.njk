@@ -1,0 +1,24 @@
+{% extends 'master' %}
+
+{% block header %}
+{% endblock %}
+
+{% block content %}
+<div class="banner-error">
+  <div class="banner-inner-error">
+    <h1> {{ error.status }}</h1>
+    <p> Something bad happened! </p>
+  </div>
+</div>
+
+<div class="content-error">
+  <div class="content-inner-error">
+    <div class="button-holder">
+      <a href="/docs/overview" class="button button-big">Browse Documentation</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

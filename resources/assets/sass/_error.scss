@@ -1,0 +1,63 @@
+.banner-error {
+    padding: 20px 0 40px;
+    background: #503d67;
+    background: -moz-radial-gradient(top,ellipse cover,#744d82 11%,#503d67 99%,#503d67 100%);
+    background: -webkit-gradient(radial,top center,0,center center,100%,color-stop(11%,#744d82),color-stop(99%,#503d67),color-stop(100%,#503d67));
+    background: -webkit-radial-gradient(top,ellipse cover,#744d82 11%,#503d67 99%,#503d67 100%);
+    background: -o-radial-gradient(top,ellipse cover,#744d82 11%,#503d67 99%,#503d67 100%);
+    background: -ms-radial-gradient(top,ellipse cover,#744d82 11%,#503d67 99%,#503d67 100%);
+    background: radial-gradient(ellipse at top,#744d82 11%,#503d67 99%,#503d67 100%);
+    text-align: center;
+    box-sizing: border-box;
+    height: 60vh;
+    display: table;
+    width: 100%;
+
+    .banner-inner-error {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    h1 {
+        font-family: "Source Sans Pro",sans-serif;
+        font-weight: 700;
+        font-size: 200px;
+        color: #fff;
+        line-height: 154px;
+        margin-bottom: 36px;
+        text-shadow: 0 1px 5px rgba(0,0,0,.32);
+    }
+
+    p {
+        letter-spacing: 1.5px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+.content-error {
+    height: 40vh;
+    display: table;
+    width: 100%;
+    text-align: center;
+
+    .content-inner-error {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .button {
+        color: $primary-color;
+        border: 2px solid $primary-color;
+        border-radius: 0;
+        font-size: 1.6rem;
+        padding: 4px 30px;
+        height: auto;
+        &:hover {
+            background: $primary-color;
+            color: #fff;
+        }
+    }
+}
