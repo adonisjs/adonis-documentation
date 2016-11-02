@@ -2,6 +2,8 @@
 {% set algoliaKey = use('Env').get('ALGOLIA_KEY') %}
 {% set latestVersion = use('Env').get('LATEST_DOCS_VERSION') %}
 
+{% block title %}{{ meta.title }}{% endblock %}
+
 {% block content %}
   <div class="switcher">
     <div class="container">
