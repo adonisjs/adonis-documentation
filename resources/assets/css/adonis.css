@@ -841,7 +841,7 @@ form {
     width: 100%;
     display: block;
     border: none;
-    background: url("./images/search.svg") center right no-repeat #fff;
+    background: url("./images/icon-search.svg") center right no-repeat #fff;
     padding: 25px 0px;
     width: 100%;
     font-size: 1.6rem;
