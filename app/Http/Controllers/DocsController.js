@@ -14,7 +14,8 @@ class DocsController {
      * Redirect when not a valid documentation version
      */
     if (!Versions.hasVersion(docsVersion)) {
-      return response.status(301).redirect(`/docs/${latestVersion}/${permalink}`)
+      const toUrl = permalink || docsVersion
+      return response.status(301).redirect(`/docs/${latestVersion}/${toUrl}`)
     }
 
     /**
