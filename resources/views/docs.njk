@@ -1,6 +1,7 @@
 {% extends 'master' %}
 {% set algoliaKey = use('Env').get('ALGOLIA_KEY') %}
 {% set latestVersion = use('Env').get('LATEST_DOCS_VERSION') %}
+{% set title = meta.title %}
 
 {% block content %}
   <div class="switcher">

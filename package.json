@@ -9,7 +9,7 @@
     "concat:styles": "cat ./resources/assets/css/github.css ./resources/assets/css/algolia.css ./resources/assets/css/adonis.css | cleancss -o public/adonis.css",
     "build:styles": "npm run build:sass && npm run concat:styles",
     "build:scripts": "uglifyjs resources/assets/js/highlight.pack.js resources/assets/js/zepto.js -o public/adonis.js",
-    "build": "build:styles && npm run build:scripts",
+    "build": "npm run build:styles && npm run build:scripts",
     "watch:styles": "chokidar 'resources/assets/sass/*.scss' -c 'npm run build:styles'",
     "watch:scripts": "chokidar 'resources/assets/js/*.js' -c 'npm run build:scripts'",
     "watch": "concurrently 'npm run watch:styles' 'npm run watch:scripts'",
