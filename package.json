@@ -3,8 +3,8 @@
   "version": "3.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --watch app --watch bootstrap --watch config --watch .env -x \"node --harmony_proxies\" server.js",
-    "start": "node --harmony_proxies server.js",
+    "dev": "nodemon --watch app --watch bootstrap --watch config --watch .env -x node server.js",
+    "start": "node server.js",
     "build:sass": "node-sass ./resources/assets/sass/app.scss ./resources/assets/css/adonis.css --include-path=bower_components",
     "concat:styles": "cat ./resources/assets/css/github.css ./resources/assets/css/algolia.css ./resources/assets/css/adonis.css | cleancss -o public/adonis.css",
     "build:styles": "npm run build:sass && npm run concat:styles",
