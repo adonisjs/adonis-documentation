@@ -11,7 +11,8 @@
 
 const versionsImplementations = {
   '3.0': 'App/Services/Versions/Version30',
-  '3.1': 'App/Services/Versions/Version31'
+  '3.1': 'App/Services/Versions/Version31',
+  '3.2': 'App/Services/Versions/Version32'
 }
 
 const Versions = exports = module.exports = {}
