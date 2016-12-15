@@ -42,7 +42,7 @@
     @include bare-list(null, null, 0, null);
     li {
       float: left;
-      margin: 18px 20px 0 0;
+      margin: 12px 20px 0 0;
       a {
         @extend .subtitle;
         @extend .block-anchor;
@@ -50,6 +50,10 @@
         font-weight: 500;
         margin: 10px 0;
         color: $secondary-color;
+      }
+
+      &:last-child {
+        margin-right: 0;
       }
     }
   }

@@ -3,12 +3,12 @@
   "version": "3.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --watch app --watch bootstrap --watch config --watch .env -x \"node --harmony_proxies\" server.js",
+    "dev": "nodemon --watch app --watch bootstrap --watch config --watch .env -x node --harmony_proxies server.js",
     "start": "node --harmony_proxies server.js",
     "build:sass": "node-sass ./resources/assets/sass/app.scss ./resources/assets/css/adonis.css --include-path=bower_components",
     "concat:styles": "cat ./resources/assets/css/github.css ./resources/assets/css/algolia.css ./resources/assets/css/adonis.css | cleancss -o public/adonis.css",
     "build:styles": "npm run build:sass && npm run concat:styles",
-    "build:scripts": "uglifyjs resources/assets/js/highlight.pack.js resources/assets/js/zepto.js -o public/adonis.js",
+    "build:scripts": "uglifyjs bower_components/jquery/dist/jquery.slim.min.js resources/assets/js/highlight.pack.js bower_components/waypoints/lib/jquery.waypoints.min.js bower_components/waypoints/lib/shortcuts/sticky.js resources/assets/js/core.js -o public/adonis.js",
     "build": "npm run build:styles && npm run build:scripts",
     "watch:styles": "chokidar 'resources/assets/sass/*.scss' -c 'npm run build:styles'",
     "watch:scripts": "chokidar 'resources/assets/js/*.js' -c 'npm run build:scripts'",
@@ -16,7 +16,7 @@
     "lint": "standard",
     "setup:3.0": "./ace build:docs adonisjs/docs --docVersion=3.0 --branch=develop --parser=markdown",
     "setup:3.1": "./ace build:docs adonisjs/docs --docVersion=3.1 --branch=3.1 --parser=adoc",
-    "setup": "npm install && npm run setup:3.0 && npm run setup:3.1"
+    "setup": "npm install && bower install && npm run setup:3.0 && npm run setup:3.1"
   },
   "standard": {
     "global": [

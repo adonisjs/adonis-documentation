@@ -1,6 +1,9 @@
 # Node modules
 node_modules
 
+# Bower modules
+bower_components
+
 # Ignoring everything inside storage directory
 storage/*
 

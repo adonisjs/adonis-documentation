@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="/adonis.css">
 </head>
 <body>
+  {% include 'partials.topbar' %}
   <section>
     {% block header %} {% include 'partials.header' %} {% endblock %}
     <section class="body">
@@ -55,7 +56,6 @@
       ga('create', 'UA-62429600-1', 'auto');
       ga('send', 'pageview');
     </script>
-    <script src="//my.hellobar.com/fc9d2f4007cae851f2beb4fd70f3a8511f63e00a.js" type="text/javascript" charset="utf-8" async="async"></script>
   {% endblock %}
 </body>
 </html>
