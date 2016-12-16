@@ -6,6 +6,7 @@
 // GLOBAL STYLES //
 ///////////////////
 body {
+  padding-top: 56px;
   -webkit-font-smoothing: antialiased;
   &.active-sidebar {
     overflow: hidden;
@@ -168,6 +169,15 @@ div.pretty-list {
 /////////////////////////////////
 .switcher {
   border-bottom: 1px solid $border-color;
+
+  &.stuck {
+    width: 100%;
+    background: #FFF;
+    position: fixed;
+    left: 0;
+    top: 56px;
+    z-index: 999;
+  }
 }
 
 /////////////////////////////////////////////

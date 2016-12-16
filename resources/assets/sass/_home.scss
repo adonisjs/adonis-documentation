@@ -2,13 +2,7 @@
 // THE SPLASH CONTAINER WITH PURPLE BG //
 /////////////////////////////////////////
 .splash {
-  background: $primary-color;
-  background: -moz-radial-gradient(top,ellipse cover,$primary-color 11%,darken($primary-color, 7%) 99%,darken($primary-color, 7%) 100%);
-  background: -webkit-gradient(radial,top center,0,center center,100%,color-stop(11%,$primary-color),color-stop(99%,darken($primary-color, 7%)),color-stop(100%,darken($primary-color, 7%)));
-  background: -webkit-radial-gradient(top,ellipse cover,$primary-color 11%,darken($primary-color, 7%) 99%,darken($primary-color, 7%) 100%);
-  background: -o-radial-gradient(top,ellipse cover,$primary-color 11%,darken($primary-color, 7%) 99%,darken($primary-color, 7%) 100%);
-  background: -ms-radial-gradient(top,ellipse cover,$primary-color 11%,darken($primary-color, 7%) 99%,darken($primary-color, 7%) 100%);
-  background: radial-gradient(ellipse at top,$primary-color 40%,#503d67 99%,#503d67 100%);
+  @include primary-gradient;
 
   .header {
     border-bottom: none;

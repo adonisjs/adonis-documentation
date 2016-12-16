@@ -1,0 +1,42 @@
+
+.topbar {
+  width: 100%;
+  color: #FFF;
+  background: rgb(90, 70, 117);
+  overflow: hidden;
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 -3px 10px #444;
+
+  .topbar__message {
+    padding: 5px 0;
+    font-size: 14px;
+    float: left;
+  }
+
+  .topbar__action {
+    width: 200px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    float: right;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #FFF;
+    color: $primary-color;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    &:hover {
+      background: #444;
+      color: #FFF;
+    }
+  }
+}
