@@ -19,8 +19,9 @@ $(function() {
   })
 
   $('#version').on('change', function () {
-    console.log('hp');
-    window.location = '/docs/' + $(this).val() + '/{{meta.permalink}}'
+    const toUrl = window.location.pathname.split('/')
+    toUrl[2] = $(this).val()
+    window.location = toUrl
   })
 
   // waypoints

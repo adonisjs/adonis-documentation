@@ -13,7 +13,7 @@
 
   .topbar__message {
     padding: 5px 0;
-    font-size: 14px;
+    font-size: 16px;
     float: left;
   }
 
@@ -28,6 +28,8 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    opacity: 0.6;
+    transition: opacity 200ms ease;
     letter-spacing: 1px;
     background: #FFF;
     color: $primary-color;
@@ -35,8 +37,7 @@
     box-sizing: border-box;
 
     &:hover {
-      background: #444;
-      color: #FFF;
+      opacity: 1;
     }
   }
 }
