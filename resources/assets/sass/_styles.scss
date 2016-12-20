@@ -47,6 +47,10 @@ blockquote, dl, figure, form, ol, p, pre, table, ul {
   @include base-font-size();
 }
 
+ol {
+  list-style: decimal;
+}
+
 dl dd {
   margin: 0;
 }
@@ -54,7 +58,7 @@ dl dd {
 /////////////////////////////
 // CODE BLOCK WITH A TITLE //
 /////////////////////////////
-.listingblock, .ulist .listingblock {
+.listingblock, .ulist .listingblock, .olist .listingblock {
   .title {
     color: $light-grey;
     background: #212121;

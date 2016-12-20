@@ -21,7 +21,7 @@ $(function() {
   $('#version').on('change', function () {
     const toUrl = window.location.pathname.split('/')
     toUrl[2] = $(this).val()
-    window.location = toUrl
+    window.location = toUrl.join('/')
   })
 
   // waypoints

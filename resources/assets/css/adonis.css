@@ -1036,10 +1036,13 @@ dl dt {
 blockquote, dl, figure, form, ol, p, pre, table, ul {
   font-size: 1.6rem; }
 
+ol {
+  list-style: decimal; }
+
 dl dd {
   margin: 0; }
 
-.listingblock .title, .ulist .listingblock .title {
+.listingblock .title, .ulist .listingblock .title, .olist .listingblock .title {
   color: #9aabb1;
   background: #212121;
   padding: 12px 20px;
@@ -1049,7 +1052,7 @@ dl dd {
   margin: 0 .2rem;
   font-size: 1.2rem; }
 
-.listingblock .title + .content > pre, .ulist .listingblock .title + .content > pre {
+.listingblock .title + .content > pre, .ulist .listingblock .title + .content > pre, .olist .listingblock .title + .content > pre {
   margin-top: 0px; }
 
 .hljs, pre:not(.highlight) {
