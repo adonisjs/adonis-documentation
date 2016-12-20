@@ -7,12 +7,25 @@ This project contains the website hosted on http://adonisjs.com. The pull docume
 ## Setup
 The most easiest thing to do.
 
-1. Clone the repo. `git clone git@github.com/adonisjs/adonis-documentation`.
-2. `cd` into the directory.
-3. And run `npm run setup`.
-4. Start the server by the saying `npm run dev` or `npm run start`.
+1. **Clone the repo**
+```
+git clone git@github.com/adonisjs/adonis-documentation
+```
+2. **Cd and Run Setup**
+```bash
+cd adonis-documentation && npm run setup
+```
+3. **Start server**
+```bash
+npm run dev
+```
 
+## Compiling Styles & Scripts
+All styles and scripts are saved inside `resources/assets` directory. Make sure not to touch any file inside the `public` directory, since all files are auto-generated. Run the following command for watch for styles & scripts changes and compile them.
 
+```bash
+npm run watch
+```
 
 ## Contributing
 

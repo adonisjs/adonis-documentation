@@ -14,9 +14,10 @@
     "watch:scripts": "chokidar 'resources/assets/js/*.js' -c 'npm run build:scripts'",
     "watch": "concurrently 'npm run watch:styles' 'npm run watch:scripts'",
     "lint": "standard",
-    "setup:3.0": "./ace build:docs adonisjs/docs --docVersion=3.0 --branch=develop --parser=markdown",
+    "setup:3.0": "./ace build:docs adonisjs/docs --docVersion=3.0 --branch=3.0 --parser=markdown",
     "setup:3.1": "./ace build:docs adonisjs/docs --docVersion=3.1 --branch=3.1 --parser=adoc",
-    "setup": "npm install && bower install && npm run setup:3.0 && npm run setup:3.1"
+    "setup:3.2": "./ace build:docs adonisjs/docs --docVersion=3.2 --branch=3.2 --parser=adoc",
+    "setup": "npm install && bower install && npm run setup:3.0 && npm run setup:3.1 && npm run setup:3.2"
   },
   "standard": {
     "global": [
