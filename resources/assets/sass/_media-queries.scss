@@ -76,6 +76,7 @@
 
   .menu-container {
     width: grid-column-width(3);
+    float: right;
   }
 
   .menu .nav {
@@ -97,8 +98,8 @@
 }
 
 @media (min-width: 900px) {
-  .hamburger {
-    display: none;
+  .hamburger,.dropdown-menu{
+    display: none !important;
   }
 }
 

@@ -24,7 +24,7 @@
   cursor: pointer;
   padding: 10px;
   width: 37px;
-  margin: 18px 0 20px 0;
+  margin: 20px 0 0 0;
   box-sizing: border-box;
   div {
     background: $font-color;
@@ -56,5 +56,36 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+.dropdown {
+  position: relative;
+  &.active {
+    .hamburger {
+      background: $white-color;
+      > div {
+        background: $dark-grey !important;
+      }
+    }
+    .dropdown-menu {
+      display: block;
+    }
+  }  
+}
+
+.dropdown-menu {
+  background: $white-color;
+  position: absolute;
+  padding: 5px 0;
+  display: none;
+  width: 150px;
+  z-index: 1;
+  right: 0;
+  .dropdown-list {
+    color: $dark-grey !important;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: block;
   }
 }
