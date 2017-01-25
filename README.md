@@ -2,10 +2,10 @@
 
 This project contains the website hosted on http://adonisjs.com. Pull the documentation from [https://github.com/adonisjs/docs](https://github.com/adonisjs/docs) and compile the markup files into HTML.
 
-> Did we told you, the docs are built using AdonisJs itself :smile:
+> Did we tell you, the docs are built using AdonisJs itself :smile:
 
 ## Setup
-The most easiest thing to do.
+The easiest thing to do.
 
 1. **Clone the repo**
 ```
@@ -21,7 +21,7 @@ npm run dev
 ```
 
 ## Compiling Styles & Scripts
-All styles and scripts are saved inside `resources/assets` directory. Make sure not to touch any file inside the `public` directory, since all files are auto-generated. Run the following command for watch for styles & scripts changes and compile them.
+All styles and scripts are saved inside the `resources/assets` directory. Make sure not to touch any file inside the `public` directory, since all files are auto-generated. Run the following command to watch for styles & scripts changes and also compile them.
 
 ```bash
 npm run watch
