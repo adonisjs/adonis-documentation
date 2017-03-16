@@ -301,7 +301,7 @@ p {
 .container {
   position: relative;
   width: 100%;
-  max-width: 1080px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -1024,6 +1024,53 @@ form {
   .footer p, .footer a {
     color: #9aabb1;
     margin: 0; }
+
+.sponsor {
+  width: 130px;
+  position: fixed;
+  z-index: 99;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 3px; }
+  .sponsor span {
+    color: #7f8c8d;
+    display: inline-block;
+    margin-bottom: 5px;
+    text-align: left; }
+  .sponsor a {
+    text-decoration: none; }
+
+.carbon-img, .carbon-text {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: normal;
+  color: #424950;
+  font-weight: 600;
+  line-height: 18px;
+  font-size: 12px; }
+
+.carbon-text:hover {
+  color: #2e2f30; }
+
+.carbon-img img {
+  width: 130px; }
+
+.carbon-poweredby {
+  font-size: 12px;
+  color: #aaa;
+  font-weight: #9aabb1; }
+
+@media screen and (max-width: 1300px) {
+  .sponsor {
+    z-index: 7;
+    position: relative;
+    padding: 0;
+    bottom: 0;
+    right: 0;
+    float: right;
+    padding: 0 0 20px 30px; } }
 
 body {
   padding-top: 56px;
