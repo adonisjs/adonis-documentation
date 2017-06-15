@@ -41,7 +41,7 @@
     "youch": "^2.0.2"
   },
   "optionalDependencies": {
-    "fsevents": "*"
+    "fsevents": ">=1.1.2"
   },
   "autoload": {
     "App": "./app"
