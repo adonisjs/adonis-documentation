@@ -49,7 +49,7 @@
   "devDependencies": {
     "chokidar-cli": "^1.2.0",
     "clean-css": "^4.0.2",
-    "clean-css-cli": "^4.0.9",
+    "clean-css-cli": "^4.1.5",
     "concurrently": "^3.1.0",
     "node-sass": "^4.3.0",
     "nodemon": "^1.11.0",
