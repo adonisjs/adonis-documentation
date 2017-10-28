@@ -9,13 +9,17 @@ The easiest thing to do.
 
 1. **Clone the repo**
 ```
-git clone git@github.com/adonisjs/adonis-documentation
+git clone git@github.com:adonisjs/adonis-documentation
 ```
 2. **Cd and Run Setup**
 ```bash
 cd adonis-documentation && npm run setup
 ```
-3. **Start server**
+3. **Create env config**
+```bash
+cp .env.example .env
+```
+4. **Start server**
 ```bash
 npm run dev
 ```
