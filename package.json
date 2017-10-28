@@ -47,6 +47,7 @@
     "App": "./app"
   },
   "devDependencies": {
+    "bower": "^1.8.2",
     "chokidar-cli": "^1.2.0",
     "clean-css": "^4.0.2",
     "clean-css-cli": "^4.0.9",
