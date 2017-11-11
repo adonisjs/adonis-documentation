@@ -51,7 +51,7 @@
     "clean-css": "^4.0.2",
     "clean-css-cli": "^4.0.9",
     "concurrently": "^3.1.0",
-    "node-sass": "^4.3.0",
+    "node-sass": "^4.6.1",
     "nodemon": "^1.11.0",
     "standard": "^9.0.0",
     "uglify-js": "^2.7.5",
