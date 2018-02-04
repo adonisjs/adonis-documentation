@@ -36,7 +36,7 @@
     "adonis-framework": "^3.0.8",
     "adonis-middleware": "^1.0.10",
     "docketjs": "git+https://github.com/poppinss/docketjs.git#develop",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.5",
     "pify": "^2.3.0",
     "youch": "^2.0.2"
   },
